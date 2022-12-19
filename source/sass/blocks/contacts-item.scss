@@ -1,0 +1,49 @@
+.contacts-item {
+  color: $color-sapphire;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.contacts-item__title {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 0 0 2px;
+
+  @include vp-1199 {
+    font-size: 1.25rem;
+    margin: 0 0 3px;
+  }
+}
+
+.contacts-item__description {
+  margin: 0;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    font-size: 1.125rem;
+    line-height: 1.52em;
+  }
+}
+
+.contacts-item a {
+  &:hover {
+    color: $color-torch-intensive-red;
+  }
+}
+
+.contacts-item--address {
+  @include vp-767 {
+    order: -3;
+  }
+}
+
+.contacts-item--schedule {
+  @include vp-767 {
+    order: -2;
+  }
+}

@@ -1,0 +1,13 @@
+.feedback-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feedback-list__item {
+  background-color: $color-resolution-blue;
+
+  img {
+    border-radius: 50%;
+  }
+}

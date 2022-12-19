@@ -1,0 +1,12 @@
+.season-options {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  z-index: 9;
+}
+
+.season-options__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}

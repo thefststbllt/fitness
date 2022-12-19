@@ -1,0 +1,229 @@
+.staff-unit {
+  padding: 51px 46px 31px;
+  position: relative;
+
+  @include vp-1199 {
+    min-width: 268px;
+  }
+
+  @include vp-767 {
+    min-width: 226px;
+    padding: 41px 24px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    z-index: 1;
+
+    &::before {
+      z-index: -1;
+    }
+
+    &::after {
+      z-index: -1;
+      background-color: rgba(16, 38, 84, 0.89);
+    }
+
+    .staff-unit__name {
+      position: static;
+
+      @include vp-1199 {
+        margin-left: -8px;
+      }
+
+      @include vp-767 {
+        margin-left: -3px;
+      }
+    }
+  }
+}
+
+.staff-list .staff-unit {
+  @include vp-1199 {
+    &::before {
+      background-size: cover;
+    }
+  }
+
+  @include vp-1199 {
+    &::before {
+      background-size: cover;
+    }
+  }
+}
+
+.staff-unit--pavlova {
+  &::before {
+    background-image: url('../img/content-coach-1--desktop.webp');
+
+  }
+
+  @include retina {
+    &::before {
+      background-image: url('../img/content-coach-1--desktop@2x.webp');
+    }
+  }
+}
+
+.staff-list .staff-unit--pavlova {
+  @include vp-767 {
+    &::before {
+      background-image: url('../img/content-coach-1--mobile.webp');
+    }
+    @include retina {
+      &::before {
+        background-image: url('../img/content-coach-1--mobile@2x.webp');
+      }
+    }
+  }
+}
+
+.staff-unit--lavrov {
+  &::before {
+    background-image: url('../img/content-coach-2--desktop.webp');
+
+  }
+
+  @include retina {
+    &::before {
+      background-image: url('../img/content-coach-2--desktop@2x.webp');
+    }
+  }
+}
+
+.staff-list .staff-unit--lavrov {
+  @include vp-767 {
+    &::before {
+      background-image: url('../img/content-coach-2--mobile.webp');
+    }
+    @include retina {
+      &::before {
+        background-image: url('../img/content-coach-2--mobile@2x.webp');
+      }
+    }
+  }
+}
+
+.staff-unit--pashkov {
+  &::before {
+    background-image: url('../img/content-coach-3--desktop.webp');
+
+  }
+
+  @include retina {
+    &::before {
+      background-image: url('../img/content-coach-3--desktop@2x.webp');
+    }
+  }
+}
+
+.staff-list .staff-unit--pashkov {
+  @include vp-767 {
+    &::before {
+      background-image: url('../img/content-coach-3--mobile.webp');
+    }
+    @include retina {
+      &::before {
+        background-image: url('../img/content-coach-3--mobile@2x.webp');
+      }
+    }
+  }
+}
+
+.staff-unit--ketova {
+  &::before {
+    background-image: url('../img/content-coach-4--desktop.webp');
+
+  }
+
+  @include retina {
+    &::before {
+      background-image: url('../img/content-coach-4--desktop@2x.webp');
+    }
+  }
+}
+
+.staff-list .staff-unit--ketova {
+  @include vp-767 {
+    &::before {
+      background-image: url('../img/content-coach-4--mobile.webp');
+    }
+    @include retina {
+      &::before {
+        background-image: url('../img/content-coach-4--mobile@2x.webp');
+      }
+    }
+  }
+}
+
+.staff-unit__name {
+  color: $color-default-white;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin: 0;
+  position: absolute;
+  bottom: 23px;
+  left: 30%;
+  z-index: 2;
+}
+
+.staff-unit__competence {
+  display: block;
+  color: $color-spindle;
+  font-size: 1rem;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 35px;
+
+  @include vp-1199 {
+    margin-left: -8px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+}
+
+.staff-unit__list {
+  margin: 0 0 0 9px;
+  padding: 0;
+  color: $color-default-white;
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  list-style: none;
+  max-height: 131px;
+  overflow-y: scroll;
+}
+
+
+.staff-unit__list li {
+  display: flex;
+
+  &::before {
+    content: '';
+    display: block;
+    min-width: 6px;
+    height: 6px;
+    margin: 7px 10px 0 0;
+    border-radius: 50%;
+    background-color: $color-default-white;
+  }
+
+  &:not(:first-child) {
+    margin-top: 13px;
+  }
+}

@@ -1,0 +1,92 @@
+.season-pass {
+  background: $color-ghost-white;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    display: block;
+    background: center / contain no-repeat url('../img/background-athletic-discs--desktop.webp');
+    width: 287px;
+    height: 494px;
+    position: absolute;
+    bottom: -151px;
+    right: 0;
+    z-index: 1;
+  }
+
+  @include vp-767 {
+    &::after {
+      display: none;
+    }
+  }
+
+  @include retina {
+    &::after {
+      background: center / contain no-repeat url('../img/background-athletic-discs--desktop@2x.webp');
+    }
+  }
+}
+
+.season-pass__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 121px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+}
+
+.season-pass__title {
+  text-align: center;
+  font-size: 3.325rem;
+  line-height: 1.2em;
+  margin-left: -6px;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    margin-left: -14px;
+  }
+
+  @include vp-767 {
+    margin-left: -8px;
+  }
+}
+
+.season-pass .buttons-list {
+  margin-bottom: 38px;
+
+  @include vp-1199 {
+    margin-bottom: 46px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
+  }
+}
+
+.page-content .season-pass {
+  @include vp-1199 {
+    &::after {
+      width: 347px;
+      height: 444px;
+      bottom: -125px;
+      background: center / contain no-repeat url('../img/background-athletic-discs--tablet.webp');
+    }
+
+    @include retina {
+      &::after {
+        background: center / contain no-repeat url('../img/background-athletic-discs--tablet@2x.webp');
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.buttons-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 341px;
+  border-bottom: 2px solid $color-grey;
+
+  @include vp-1199 {
+    width: 332px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+  }
+}
+
+.buttons-list__button {
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  padding: 18px 0 10px;
+  background-color: transparent;
+  position: relative;
+  border: none;
+  cursor: pointer;
+
+  @include vp-1199 {
+    font-size: 1.125rem;
+    padding: 19px 0 12px;
+  }
+
+  @include vp-767 {
+    font-size: 1rem;
+    padding: 21px 0 12px;
+  }
+}
+
+.buttons-list__button:hover,
+.buttons-list__button--current {
+
+  &::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-crimson;
+    position: absolute;
+    bottom: -2px;
+  }
+}
+
+.buttons-list__button:hover {
+  color: $color-crimson;
+}

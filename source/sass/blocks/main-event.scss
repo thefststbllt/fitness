@@ -1,0 +1,149 @@
+.main-event {
+  background-color: $color-default-white;
+}
+
+.main-event__container {
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 63px;
+  }
+}
+
+.main-event__banner {
+  background: right / contain no-repeat url('../img/content-gymnast--desktop.webp') $color-torch-intensive-red;
+  padding: 85px 736px 84px 78px;
+  color: $color-default-white;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 4.54vw;
+
+  @include retina {
+    background-image: url('../img/content-gymnast--desktop@2x.webp');
+  }
+
+  @include vp-1199 {
+    padding: 51px 44px 50px;
+    column-gap: 32px;
+  }
+
+  @include vp-767 {
+    padding: 50px 44px 343px;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+}
+
+.main-event__title {
+  color: white;
+  font-size: 5.125rem;
+  line-height: 0.96em;
+  text-transform: uppercase;
+  grid-row: 1 / 3;
+  margin: 0 0 0 10px;
+
+  @include vp-1199 {
+    font-size: 3rem;
+    line-height: 0.96em;
+  }
+
+  @include vp-767 {
+    font-size: 3rem;
+    line-height: 0.96em;
+  }
+}
+
+.main-event__date,
+.main-event__time {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-event__time {
+  padding-top: 21px;
+
+  @include vp-1199 {
+    padding-top: 7px;
+  }
+}
+
+.main-event__header {
+  font-size: 1.125rem;
+  line-height: 1em;
+  padding-bottom: 9px;
+
+  @include vp-1199 {
+    font-size: 0.75rem;
+    line-height: 1em;
+    padding-bottom: 3px;
+  }
+}
+
+.main-event time {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.15em;
+  width: max-content;
+  border-top: 1px solid $color-default-white;
+
+  @include vp-1199 {
+    font-size: 1.5rem;
+  }
+}
+
+.main-event__month {
+  font-weight: 400;
+  font-size: 0.825rem;
+  line-height: 1.3em;
+  display: inline-block;
+  width: 50px;
+  margin: 0 0 0 7px;
+
+  @include vp-1199 {
+    font-size: 0.625rem;
+    margin: 2px 0 0 4px;
+    width: 30px;
+  }
+}
+
+.main-event__description {
+  grid-column: 1 / 3;
+  margin: 17px 0 46px;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+
+  @include vp-1199 {
+    font-size: 0.75rem;
+    margin: 5px 0 31px;
+  }
+}
+
+.main-event__button {
+  grid-column: 1 / 3;
+}
+
+.main-event .main-event__banner {
+  @include vp-1199 {
+    background-image: url('../img/content-gymnast--tablet.webp');
+
+    @include retina {
+      background-image: url('../img/content-gymnast--tablet@2x.webp');
+    }
+  }
+
+  @include vp-767 {
+    background: bottom 0 left 0 / contain no-repeat url('../img/content-gymnast--mobile.webp') $color-torch-intensive-red;
+
+    @include retina {
+      background: bottom 0 left 0 / contain no-repeat url('../img/content-gymnast--mobile@2x.webp') $color-torch-intensive-red;
+    }
+  }
+}
