@@ -49,6 +49,10 @@
 .company-staff__button--prev {
   left: 3vw;
 
+  @include vp-1199 {
+    left: 5vw;
+  }
+
   @include vp-767 {
     left: 7px;
   }
@@ -56,6 +60,10 @@
 
 .company-staff__button--next {
   right: 3vw;
+
+  @include vp-1199 {
+    right: 5vw;
+  }
 
   @include vp-767 {
     right: 7px;

@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper, {Navigation} from 'swiper';
 
 const staffSwiperTarget = document.querySelector('.swiper-staff');
 const staffSwiperList = staffSwiperTarget.querySelector('.staff-list');
@@ -14,10 +14,13 @@ export const initStaffSwiper = () => {
   staffSwiperButtonNext.classList.add('swiper-button-next');
 
   return new Swiper('.swiper-staff', {
+    modules: [Navigation],
     navigation: {
       prevEl: '.swiper-button-prev',
       nextEl: '.swiper-button-next',
     },
+
+    loop: true,
 
     slidesPerView: 'auto',
 

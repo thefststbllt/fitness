@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper, {Navigation} from 'swiper';
 
 const feedbackSwiperTarget = document.querySelector('.swiper-feedback');
 const feedBackSwiperList = feedbackSwiperTarget.querySelector('.feedback-list');
@@ -16,6 +16,8 @@ export const initFeedbackSwiper = () => {
   feedbackButtonPrev.classList.add('swiper-button-prev');
 
   return new Swiper('.swiper-feedback', {
+    modules: [Navigation],
+
     slidesPerView: 1,
     loop: true,
 

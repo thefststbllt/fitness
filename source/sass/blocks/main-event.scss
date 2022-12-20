@@ -34,6 +34,7 @@
   @include vp-1199 {
     padding: 51px 44px 50px;
     column-gap: 32px;
+    max-width: 678px;
   }
 
   @include vp-767 {

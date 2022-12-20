@@ -28,4 +28,14 @@
   .staff-unit {
     height: 294px;
   }
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .staff-unit {
+      justify-self: center;
+    }
+  }
+
 }
