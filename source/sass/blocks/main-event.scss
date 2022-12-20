@@ -20,10 +20,12 @@
 .main-event__banner {
   background: right / contain no-repeat url('../img/content-gymnast--desktop.webp') $color-torch-intensive-red;
   padding: 85px 736px 84px 78px;
+  margin: 0 auto;
   color: $color-default-white;
+  max-width: 1160px;
   display: grid;
   grid-template-columns: min-content 1fr;
-  column-gap: 4.54vw;
+  column-gap: 50px;
 
   @include retina {
     background-image: url('../img/content-gymnast--desktop@2x.webp');

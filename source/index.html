@@ -181,9 +181,9 @@
         <section class="page-content__block company-staff">
           <div class="company-staff__container container">
             <h2 class="company-staff__title title">Тренеры</h2>
-            <div class="swiper">
-              <ul class="company-staff__list staff-list swiper-wrapper">
-                <li class="staff-list__item staff-unit staff-unit--pavlova">
+            <div class="swiper-staff">
+              <ul class="company-staff__list staff-list staff-list--no-js swiper-wrapper">
+                <li class="staff-list__item swiper-slide staff-unit staff-unit--pavlova">
                   <h3 class="staff-unit__name" data-coach-name="Анна Павлова">Анна Павлова</h3>
                   <span class="staff-unit__competence">General instructor</span>
                   <ul class="staff-unit__list">
@@ -192,7 +192,7 @@
                     <li>Опыт — 10 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item staff-unit staff-unit--lavrov">
+                <li class="staff-list__item swiper-slide staff-unit staff-unit--lavrov">
                   <h3 class="staff-unit__name" data-coach-name="Алексей Лавров">Алексей Лавров</h3>
                   <span class="staff-unit__competence">Armwrestling</span>
                   <ul class="staff-unit__list">
@@ -201,7 +201,7 @@
                     <li>Опыт — 3 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item staff-unit staff-unit--pashkov">
+                <li class="staff-list__item swiper-slide staff-unit staff-unit--pashkov">
                   <h3 class="staff-unit__name" data-coach-name="Александр Пашков">Александр Пашков</h3>
                   <span class="staff-unit__competence">CrossFit</span>
                   <ul class="staff-unit__list">
@@ -210,7 +210,7 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item staff-unit staff-unit--ketova">
+                <li class="staff-list__item swiper-slide staff-unit staff-unit--ketova">
                   <h3 class="staff-unit__name" data-coach-name="Мария Кетова">Мария Кетова</h3>
                   <span class="staff-unit__competence">Pilates</span>
                   <ul class="staff-unit__list">
@@ -219,7 +219,7 @@
                     <li>Опыт — 5 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item staff-unit staff-unit--pavlova">
+                <li class="staff-list__item swiper-slide staff-unit staff-unit--pavlova">
                   <h3 class="staff-unit__name" data-coach-name="Анна Павлова">Анна Павлова</h3>
                   <span class="staff-unit__competence">General instructor</span>
                   <ul class="staff-unit__list">
@@ -228,7 +228,7 @@
                     <li>Опыт - 10 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item staff-unit staff-unit--lavrov">
+                <li class="staff-list__item swiper-slide staff-unit staff-unit--lavrov">
                   <h3 class="staff-unit__name" data-coach-name="Алексей Лавров">Алексей Лавров</h3>
                   <span class="staff-unit__competence">Armwrestling</span>
                   <ul class="staff-unit__list">
@@ -237,7 +237,7 @@
                     <li>Опыт - 3 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item staff-unit staff-unit--pashkov">
+                <li class="staff-list__item swiper-slide staff-unit staff-unit--pashkov">
                   <h3 class="staff-unit__name" data-coach-name="Александр Пашков">Александр Пашков</h3>
                   <span class="staff-unit__competence">CrossFit</span>
                   <ul class="staff-unit__list">
@@ -246,7 +246,7 @@
                     <li>Опыт - 6 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item staff-unit staff-unit--ketova">
+                <li class="staff-list__item swiper-slide staff-unit staff-unit--ketova">
                   <h3 class="staff-unit__name" data-coach-name="Мария Кетова">Мария Кетова</h3>
                   <span class="staff-unit__competence">Pilates</span>
                   <ul class="staff-unit__list">
@@ -256,8 +256,10 @@
                   </ul>
                 </li>
               </ul>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <button class="company-staff__button company-staff__button--prev visually-hidden" type="button"
+                      aria-label="previous-slide"></button>
+              <button class="company-staff__button company-staff__button--next visually-hidden" type="button"
+                      aria-label="next-slide"></button>
             </div>
           </div>
         </section>
@@ -319,15 +321,28 @@
         <section class="page-content__block feedback">
           <div class="feedback__container container">
             <h2 class="feedback__title title">Отзывы</h2>
-            <ul class="feedback__list feedback-list">
-              <li class="feedback-list__item user-comment">
-                <img src="img/feedback-user-1--desktop@2x.webp" width="160" height="160" alt="user-1">
-                <span class="user-comment__name">Анна Орлова</span>
-                <p class="user-comment__message">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
-                  тренажеры обновляют, персонал
-                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-              </li>
-            </ul>
+            <div class="swiper-feedback">
+              <ul class="feedback__list feedback-list feedback-list--no-js swiper-wrapper">
+                <li class="feedback-list__item user-comment swiper-slide">
+                  <img src="img/feedback-user-1--desktop@2x.webp" width="160" height="160" alt="user-1">
+                  <span class="user-comment__name">Анна Орлова</span>
+                  <p class="user-comment__message">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
+                    чисто,
+                    тренажеры обновляют, персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </li>
+                <li class="feedback-list__item user-comment swiper-slide">
+                  <img src="img/feedback-user-1--desktop@2x.webp" width="160" height="160" alt="user-1">
+                  <span class="user-comment__name">Анна Орлова</span>
+                  <p class="user-comment__message">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
+                    чисто,
+                    тренажеры обновляют, персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </li>
+              </ul>
+              <button class="feedback__button feedback__button--prev visually-hidden" type="button" aria-label="previous-slide"></button>
+              <button class="feedback__button feedback__button--next visually-hidden" type="button" aria-label="next-slide"></button>
+            </div>
           </div>
         </section>
         <div class="page-content__bottom-info">
@@ -339,7 +354,8 @@
                   <input type="text" placeholder="Имя" required name="user-name">
                 </label>
                 <label>
-                  <input type="tel" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{9,10}$" required name="user-phone">
+                  <input type="tel" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{9,10}$"
+                         required name="user-phone">
                 </label>
                 <button type="submit">Отправить</button>
               </form>

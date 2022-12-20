@@ -1,9 +1,9 @@
 .staff-list {
-  padding: 0 56px;
   margin: 0;
+  padding: 0;
   list-style: none;
   width: 1160px;
-  overflow-x: scroll;
+  height: 294px;
 
   @include vp-1199 {
     width: 678px;
@@ -16,5 +16,16 @@
 }
 
 .staff-list__item {
-  min-width: 260px;
+  max-width: 260px;
+}
+
+.staff-list--no-js {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+
+  .staff-unit {
+    height: 294px;
+  }
 }

@@ -1,8 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initSeasonsTabs} from './modules/seasons-tabs/seasons-tabs.js';
-import {initSwiper} from './modules/staff-swiper/staff-swiper.js';
+import {initStaffSwiper} from './modules/staff-swiper/staff-swiper.js';
 import {initVideoPreview} from './modules/preview-clicker/preview-clicker.js';
+import {initFeedbackSwiper} from './modules/feedback-swiper/feedback-swiper.js';
 
 // ---------------------------------
 
@@ -10,10 +11,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-  initVideoPreview();
-  initSwiper();
   iosVhFix();
+  initVideoPreview();
   initSeasonsTabs();
+  initStaffSwiper();
+  initFeedbackSwiper();
   // Modules
   // ---------------------------------
 

@@ -18,6 +18,25 @@
     flex-direction: column;
     row-gap: 31px;
   }
+
+  label:has(input[type="tel"]:focus:invalid) {
+    position: relative;
+
+    &::before {
+      color: $color-sapphire;
+      content: "Формат номера телефона: +7(XXX)XXX-XX-XX";
+      display: inline-block;
+      width: 330px;
+      padding: 1vw;
+      height: auto;
+      background-color: $color-default-white;
+      box-shadow: 0 0 5px 1px $color-torch-intensive-red;
+      position: absolute;
+      bottom: calc(100% + 5px);
+      left: calc(100% + 10px);
+      transform: skew(-15deg);
+    }
+  }
 }
 
 .form__container {

@@ -1,5 +1,24 @@
 .company-features {
   background-color: $color-ghost-white;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-color: $color-default-white;
+    height: 100%;
+    width: 33px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  @include vp-1199 {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .company-features__container {

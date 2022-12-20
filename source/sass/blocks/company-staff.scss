@@ -32,3 +32,32 @@
 .company-staff__list {
   align-self: center;
 }
+
+.company-staff__button {
+  top: calc(50% + 16px);
+
+  @include vp-1199 {
+    top: calc(50% - 9px);
+  }
+
+  @include vp-767 {
+    transform: scale(0.45);
+    top: calc(50% + 6px);
+  }
+}
+
+.company-staff__button--prev {
+  left: 3vw;
+
+  @include vp-767 {
+    left: 7px;
+  }
+}
+
+.company-staff__button--next {
+  right: 3vw;
+
+  @include vp-767 {
+    right: 7px;
+  }
+}

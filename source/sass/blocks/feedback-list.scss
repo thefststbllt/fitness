@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  row-gap: 30px;
+}
+
+.feedback-list--no-js {
+  flex-wrap: wrap;
 }
 
 .feedback-list__item {
