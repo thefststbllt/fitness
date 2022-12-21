@@ -26,7 +26,7 @@
   cursor: pointer;
 
   @include vp-1199 {
-    font-size: 1.125rem;
+    font-size: 1.13rem;
     padding: 19px 0 12px;
   }
 
@@ -38,9 +38,8 @@
 
 .buttons-list__button:hover,
 .buttons-list__button--current {
-
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     display: block;
     width: 100%;
     height: 2px;

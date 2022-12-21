@@ -18,7 +18,7 @@
 }
 
 .main-event__banner {
-  background: right / contain no-repeat url('../img/content-gymnast--desktop.webp') $color-torch-intensive-red;
+  background: right / contain no-repeat url("../img/content-gymnast--desktop.webp") $color-torch-intensive-red;
   padding: 85px 736px 84px 78px;
   margin: 0 auto;
   color: $color-default-white;
@@ -28,7 +28,7 @@
   column-gap: 62px;
 
   @include retina {
-    background-image: url('../img/content-gymnast--desktop@2x.webp');
+    background-image: url("../img/content-gymnast--desktop@2x.webp");
   }
 
   @include vp-1199 {
@@ -45,8 +45,8 @@
 }
 
 .main-event__title {
-  color: white;
-  font-size: 5.125rem;
+  color: $color-default-white;
+  font-size: 5.13rem;
   line-height: 0.96em;
   text-transform: uppercase;
   grid-row: 1 / 3;
@@ -79,7 +79,7 @@
 }
 
 .main-event__header {
-  font-size: 1.125rem;
+  font-size: 1.13rem;
   line-height: 1em;
   padding-bottom: 9px;
 
@@ -104,14 +104,14 @@
 
 .main-event__month {
   font-weight: 400;
-  font-size: 0.825rem;
+  font-size: 0.83rem;
   line-height: 1.3em;
   display: inline-block;
   width: 50px;
   margin: 0 0 0 7px;
 
   @include vp-1199 {
-    font-size: 0.625rem;
+    font-size: 0.63rem;
     margin: 2px 0 0 4px;
     width: 30px;
   }
@@ -120,7 +120,7 @@
 .main-event__description {
   grid-column: 1 / 3;
   margin: 17px 0 46px;
-  font-size: 1.125rem;
+  font-size: 1.13rem;
   line-height: 1.5em;
 
   @include vp-1199 {
@@ -136,18 +136,18 @@
 
 .main-event .main-event__banner {
   @include vp-1199 {
-    background-image: url('../img/content-gymnast--tablet.webp');
+    background-image: url("../img/content-gymnast--tablet.webp");
 
     @include retina {
-      background-image: url('../img/content-gymnast--tablet@2x.webp');
+      background-image: url("../img/content-gymnast--tablet@2x.webp");
     }
   }
 
   @include vp-767 {
-    background: bottom 0 left 0 / contain no-repeat url('../img/content-gymnast--mobile.webp') $color-torch-intensive-red;
+    background: bottom 0 left 0 / contain no-repeat url("../img/content-gymnast--mobile.webp") $color-torch-intensive-red;
 
     @include retina {
-      background: bottom 0 left 0 / contain no-repeat url('../img/content-gymnast--mobile@2x.webp') $color-torch-intensive-red;
+      background: bottom 0 left 0 / contain no-repeat url("../img/content-gymnast--mobile@2x.webp") $color-torch-intensive-red;
     }
   }
 }

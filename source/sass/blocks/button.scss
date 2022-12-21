@@ -16,11 +16,12 @@
 }
 
 .button--info {
-  transition: .3s all;
+  transition: 0.3s all;
+
   &:hover {
     background-color: $color-default-white;
     color: $color-dark-cerulean;
-    transition: .3s all;
+    transition: 0.3s all;
   }
 }
 
@@ -40,16 +41,16 @@
 
 .button--banner {
   padding: 25px 111px;
-  transition: .3s all;
+  transition: 0.3s all;
 
   &:hover {
     color: $color-torch-intensive-red;
     background-color: $color-default-white;
-    transition: .3s all;
+    transition: 0.3s all;
   }
 
   @include vp-1199 {
-    font-size: 0.625rem;
+    font-size: 0.63rem;
     border: 2px solid $color-default-white;
     padding: 12px 52px;
   }

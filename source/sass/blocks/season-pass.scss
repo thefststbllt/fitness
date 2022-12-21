@@ -4,9 +4,9 @@
   z-index: 1;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
-    background: center / contain no-repeat url('../img/background-athletic-discs--desktop.webp');
+    background: center / contain no-repeat url("../img/background-athletic-discs--desktop.webp");
     width: 287px;
     height: 494px;
     position: absolute;
@@ -23,7 +23,7 @@
 
   @include retina {
     &::after {
-      background: center / contain no-repeat url('../img/background-athletic-discs--desktop@2x.webp');
+      background: center / contain no-repeat url("../img/background-athletic-discs--desktop@2x.webp");
     }
   }
 }
@@ -48,7 +48,7 @@
 
 .season-pass__title {
   text-align: center;
-  font-size: 3.325rem;
+  font-size: 3.33rem;
   line-height: 1.2em;
   margin-left: -6px;
   letter-spacing: 0.03em;
@@ -80,12 +80,12 @@
       width: 347px;
       height: 444px;
       bottom: -125px;
-      background: center / contain no-repeat url('../img/background-athletic-discs--tablet.webp');
+      background: center / contain no-repeat url("../img/background-athletic-discs--tablet.webp");
     }
 
     @include retina {
       &::after {
-        background: center / contain no-repeat url('../img/background-athletic-discs--tablet@2x.webp');
+        background: center / contain no-repeat url("../img/background-athletic-discs--tablet@2x.webp");
       }
     }
   }

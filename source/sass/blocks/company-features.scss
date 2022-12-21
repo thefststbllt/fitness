@@ -3,7 +3,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-color: $color-default-white;
     height: 100%;
@@ -35,7 +35,7 @@
 }
 
 .company-features__title {
-  font-size: 3.375rem;
+  font-size: 3.38rem;
   text-align: center;
   margin: 0 0 55px 10px;
 

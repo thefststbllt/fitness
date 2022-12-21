@@ -16,7 +16,6 @@
 }
 
 .options-list__item {
-
   @include vp-1199 {
     &:not(:last-child) {
       margin-bottom: 40px;

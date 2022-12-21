@@ -9,7 +9,7 @@
 }
 
 .socials__item {
-  &:not(:nth-child(7n + 1)){
+  &:not(:nth-child(7n + 1)) {
     margin-left: 11px;
   }
 }

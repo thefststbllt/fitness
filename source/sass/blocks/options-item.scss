@@ -1,5 +1,5 @@
 .options-item {
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, $color-torch-intensive-red 17.6%, $color-cobalt-intensive 95.31%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@
   width: 360px;
 
   &::before {
-    content: '';
+    content: "";
     background-color: $color-default-white;
     display: block;
     width: 100%;
@@ -50,7 +50,7 @@
 
   &:hover &__button {
     color: $color-default-white;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, $color-torch-intensive-red 17.6%, $color-cobalt-intensive 95.31%);
     padding: 26px 45px;
     border: none;
   }
@@ -58,7 +58,7 @@
 
 .options-item__title {
   margin: 0 0 10px;
-  font-size: 1.625rem;
+  font-size: 1.63rem;
   line-height: 1.12em;
   z-index: 1;
 

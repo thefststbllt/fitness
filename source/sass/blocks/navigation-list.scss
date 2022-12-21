@@ -60,7 +60,7 @@
 
 .navigation-list__link {
   color: $color-default-white;
-  font-size: 0.875rem;
+  font-size: 0.88rem;
   line-height: 1.14em;
 
   &:hover {
@@ -69,6 +69,6 @@
 
   @include vp-767 {
     font-size: 1rem;
-    line-height: 1.188em;
+    line-height: 1.19em;
   }
 }

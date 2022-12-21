@@ -3,12 +3,12 @@
   display: flex;
   flex-direction: column;
   padding: 25px 35px 35px;
-  background: linear-gradient(142.51deg, #D10A42 0%, #00359F 87.33%);
+  background: linear-gradient(142.51deg, $color-crimson 0%, $color-smalt 87.33%);
   position: relative;
   max-width: 560px;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: calc(100% - 14px);
     height: calc(100% - 14px);
@@ -30,7 +30,7 @@
 
 .promotions-item__title {
   margin: 0 0 2px;
-  font-size: 1.625rem;
+  font-size: 1.63rem;
   line-height: 1.5em;
   z-index: 1;
 
@@ -67,7 +67,7 @@
   width: max-content;
   margin-top: auto;
   z-index: 1;
-  transition: .3s all;
+  transition: 0.3s all;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -75,7 +75,7 @@
   &:hover {
     color: $color-torch-intensive-red;
     border-color: $color-torch-intensive-red;
-    transition: .3s all;
+    transition: 0.3s all;
   }
 
   @include vp-767 {
@@ -92,12 +92,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-color: $color-torch-intensive-red;
-  background-image: url('../img/content-promotion--desktop.webp');
+  background-image: url("../img/content-promotion--desktop.webp");
   min-height: 462px;
   justify-self: end;
 
   @include retina {
-    background-image: url('../img/content-promotion--desktop@2x.webp');
+    background-image: url("../img/content-promotion--desktop@2x.webp");
   }
 
   &::before {
@@ -112,18 +112,18 @@
   }
 
   .promotions-item__price {
-    font-size: 4.375rem;
+    font-size: 4.38rem;
     line-height: 1.56em;
     margin-top: -24px;
   }
 
   .promotions-item__description {
-    font-size: 1.125rem;
+    font-size: 1.13rem;
   }
 
   .promotions-item__link {
-    font-size: 0.875rem;
-    line-height: 1.143em;
+    font-size: 0.88rem;
+    line-height: 1.14em;
     color: $color-default-white;
     border-bottom: 1px solid $color-default-white;
 
@@ -159,19 +159,19 @@
 
 .promotions-list .promotions-item--main {
   @include vp-1199 {
-    background-image: url('../img/content-promotion--tablet.webp');
+    background-image: url("../img/content-promotion--tablet.webp");
 
     @include retina {
-      background-image: url('../img/content-promotion--tablet@2x.webp');
+      background-image: url("../img/content-promotion--tablet@2x.webp");
     }
   }
 
   @include vp-767 {
     background-position: bottom;
-    background-image: url('../img/content-promotion--mobile.webp');
+    background-image: url("../img/content-promotion--mobile.webp");
 
     @include retina {
-      background-image: url('../img/content-promotion--mobile@2x.webp');
+      background-image: url("../img/content-promotion--mobile@2x.webp");
     }
   }
 }

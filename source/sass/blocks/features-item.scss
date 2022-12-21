@@ -34,13 +34,13 @@
 
   .features-item__title {
     height: 100%;
-    font-size: 1.625rem;
+    font-size: 1.63rem;
     line-height: 1.5em;
   }
 
   .features-item__main-sign {
     margin-left: -5px;
-    font-size: 4.625rem;
+    font-size: 4.63rem;
     background-color: $color-default-white;
     background-image: none;
   }
@@ -65,7 +65,7 @@
     row-gap: 0;
 
     .features-item__title {
-      font-size: 1.375rem;
+      font-size: 1.38rem;
     }
 
     .features-item__description {
@@ -93,7 +93,7 @@
 }
 
 .features-item__title {
-  font-size: 1.375rem;
+  font-size: 1.38rem;
   line-height: 1em;
   margin: 0;
 
@@ -108,20 +108,20 @@
 
 .features-item__main-sign {
   order: -1;
-  font-size: 4.4375rem;
+  font-size: 4.44rem;
   line-height: 1em;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   margin-top: -11px;
   grid-area: 1/1/3/2;
-  background-color: #0041CA;
-  background-image: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
-  -webkit-background-clip: text;
+  background-color: $color-cobalt;
+  background-image: linear-gradient(127.61deg, $color-crimson 0%, $color-cobalt 45.58%);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @include vp-1199 {
-    font-size: 3.625rem;
+    font-size: 3.63rem;
     margin-top: -6px;
   }
 
@@ -133,7 +133,7 @@
 
 .features-item__unit {
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.88rem;
   line-height: 1em;
 
   @include vp-767 {

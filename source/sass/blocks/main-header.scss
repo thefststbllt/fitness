@@ -1,8 +1,8 @@
 .main-header {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
 
   @include vp-1199 {
-    background: conic-gradient(from 130.31deg at 21.03% 36.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 130.31deg at 21.03% 36.06%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
   }
 }
 
@@ -65,11 +65,15 @@
   margin-top: -53px;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     height: 556px;
     width: 500px;
-    background: center/contain no-repeat url('../img/content-superman--desktop.webp');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000e2f;
+    background-image: url("../img/content-superman--desktop.webp");
   }
 
   @include vp-1199 {
@@ -80,6 +84,7 @@
 
   @include vp-767 {
     padding: 0 0 80px;
+
     &::after {
       display: none;
     }
@@ -87,7 +92,7 @@
 
   @include retina {
     &::after {
-      background: center/contain no-repeat url('../img/content-superman--desktop@2x.webp');
+      background-image: url("../img/content-superman--desktop@2x.webp");
     }
   }
 }
@@ -111,12 +116,12 @@
     &::after {
       width: 324px;
       height: 390px;
-      background: center/contain no-repeat url('../img/content-superman--tablet.webp');
+      background-image: url("../img/content-superman--tablet.webp");
     }
 
     @include retina {
       &::after {
-        background: center/contain no-repeat url('../img/content-superman--tablet@2x.webp');
+        background-image: url("../img/content-superman--tablet@2x.webp");
       }
     }
   }
