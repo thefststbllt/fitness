@@ -5,7 +5,7 @@
   align-items: center;
   padding: 63px 77px 67px;
   position: relative;
-  max-width: 360px;
+  width: 360px;
 
   &::before {
     content: '';
@@ -22,6 +22,7 @@
   @include vp-1199 {
     padding: 61px 117px 68px;
     max-width: 442px;
+    width: auto;
   }
 
   @include vp-767 {
@@ -29,7 +30,7 @@
   }
 
   &:hover {
-    padding: 63px 77px 67px;
+    padding: 63px 76px 67px;
 
     @include vp-1199 {
       padding: 61px 117px 68px;
@@ -132,4 +133,5 @@
 
 .options-item__button {
   z-index: 1;
+  max-width: 210px;
 }

@@ -10,10 +10,12 @@
   font-size: 1rem;
   line-height: 1.5em;
   margin: 0 0 2px;
+  max-width: 200px;
 
   @include vp-1199 {
     font-size: 1.25rem;
     margin: 0 0 3px;
+    max-width: none;
   }
 }
 
