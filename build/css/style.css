@@ -1836,6 +1836,7 @@ button,
 
 .block-about__extra-feature {
   display: inline-block;
+  vertical-align: baseline;
   color: #102654;
   font-size: 1.13rem;
   line-height: 1.5em;

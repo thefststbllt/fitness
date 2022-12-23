@@ -1,9 +1,15 @@
-const seasonButton = document.querySelector('.main-info__button');
-const seasonPassBlock = document.querySelector('.season-pass__container');
+const projectsButtons = document.querySelectorAll('.button');
+const infoBlocks = document.querySelectorAll('section');
 
 export const initScrollTo = () => {
-  seasonButton.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    seasonPassBlock.scrollIntoView({behavior: 'smooth'});
+  projectsButtons.forEach((button) => {
+    button.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      const correctBlock = Array.from(infoBlocks).find((block) => `to-${block.id}` === evt.target.id);
+      if (!correctBlock) {
+        return;
+      }
+      correctBlock.scrollIntoView({behavior: 'smooth'});
+    });
   });
 };
