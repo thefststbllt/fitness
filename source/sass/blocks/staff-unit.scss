@@ -327,6 +327,12 @@
   list-style: none;
   max-height: 131px;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 
