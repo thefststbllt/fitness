@@ -1,7 +1,7 @@
 .features-list {
-  margin: 0;
   padding: 0;
   list-style: none;
+  width: 1040px;
   display: grid;
   grid-row: auto;
   grid-template-columns: 1fr 1fr;
@@ -10,10 +10,12 @@
   position: relative;
 
   @include vp-1199 {
+    width: 678px;
     column-gap: 30px;
   }
 
   @include vp-767 {
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     column-gap: 0;
@@ -33,7 +35,7 @@
   }
 
   &:nth-last-child(n+3) {
-    padding-bottom: 76px;
+    padding-bottom: 53px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
     @include vp-1199 {
@@ -42,7 +44,7 @@
     }
 
     @include vp-767 {
-      padding: 18px 42px;
+      padding: 17.5px 42px;
     }
   }
 
@@ -55,7 +57,13 @@
     }
 
     @include vp-767 {
-      padding-top: 18px;
+      padding: 22px 46px 18px;
+    }
+  }
+
+  &:nth-child(2n) {
+    @include vp-767 {
+      padding: 17.5px 32px;
     }
   }
 }

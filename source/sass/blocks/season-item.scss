@@ -1,3 +1,12 @@
+.season-item__title {
+  font-family: $ff-alumni;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  color: $color-torch-intensive-red;
+  text-shadow: -1px -1px 0 $color-sapphire, 1px -1px 0 $color-sapphire, -1px 1px 0 $color-sapphire, 1px 1px 0 $color-sapphire;
+}
+
 .season-item--hidden {
   display: none;
 }

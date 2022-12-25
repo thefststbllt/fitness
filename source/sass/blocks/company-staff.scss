@@ -1,5 +1,5 @@
 .company-staff__container {
-  padding: 6px 103px 91px;
+  padding: 6px 0 91px;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -18,10 +18,13 @@
   font-size: 3.38rem;
   line-height: 1.2em;
   margin-bottom: 48px;
+  margin-left: 7.69vw;
+  max-width: 80%;
 
   @include vp-1199 {
     text-align: center;
     margin: 0 0 32px -5px;
+    max-width: none;
   }
 
   @include vp-767 {

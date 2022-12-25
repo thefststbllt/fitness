@@ -19,11 +19,19 @@ export const initFeedbackSwiper = () => {
     modules: [Navigation],
 
     slidesPerView: 1,
-    loop: true,
+    observer: true,
+    observeParents: true,
+    loop: false,
 
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+
+    effect: 'flip',
+    flipEffect: {
+      slideShadows: true,
+      limitRotation: true,
     },
 
     grabCursor: true,

@@ -12,6 +12,8 @@
 
   @include vp-767 {
     width: 226px;
+    grid-template-columns: 1fr;
+    height: 274px;
   }
 }
 

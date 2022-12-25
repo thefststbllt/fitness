@@ -108,6 +108,10 @@
 }
 
 .staff-list .staff-unit--lavrov {
+  .staff-unit__name {
+    left: 27%;
+  }
+
   @include vp-767 {
     &::before {
       background-image: url("../img/content-coach-2--mobile.webp");
@@ -183,6 +187,10 @@
   bottom: 23px;
   left: 30%;
   z-index: 2;
+
+  @include vp-1199 {
+    left: 32%;
+  }
 }
 
 .staff-unit__competence {
@@ -203,7 +211,7 @@
 }
 
 .staff-unit__list {
-  margin: 0 0 0 9px;
+  margin: 0 0 0 8px;
   padding: 0;
   color: $color-default-white;
   font-size: 0.88rem;

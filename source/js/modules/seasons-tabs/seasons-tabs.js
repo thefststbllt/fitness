@@ -1,9 +1,13 @@
 const seasonsLists = document.querySelectorAll('.season-item');
-const buttons = document.querySelectorAll('.buttons-list__button');
+const buttonsList = document.querySelector('.buttons-list');
+const buttons = buttonsList.querySelectorAll('.buttons-list__button');
 
 export const initSeasonsTabs = () => {
+  buttonsList.classList.remove('visually-hidden');
+
   Array.from(seasonsLists).forEach((list) => {
     list.style.marginBottom = '0';
+    list.querySelector('.season-item__title').classList.add('visually-hidden');
   });
 
   Array.from(seasonsLists).slice(1).forEach((list) => {

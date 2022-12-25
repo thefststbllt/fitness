@@ -6,6 +6,7 @@
   justify-content: space-between;
   width: 341px;
   border-bottom: 2px solid $color-grey;
+  user-select: none;
 
   @include vp-1199 {
     width: 332px;

@@ -48,6 +48,7 @@
   line-height: 1.4em;
   z-index: 1;
   margin: 0;
+  word-break: break-word;
 
   @include vp-1199 {
     margin: 0 0 49px;
@@ -67,10 +68,12 @@
   width: max-content;
   margin-top: auto;
   z-index: 1;
+  max-width: 200px;
   transition: 0.3s all;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.05em;
+  user-select: none;
 
   &:hover {
     color: $color-torch-intensive-red;
@@ -88,20 +91,42 @@
   grid-area: 1/1/3/2;
   color: $color-default-white;
   padding: 34px 56% 45px 45px;
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: $color-torch-intensive-red;
-  background-image: url("../img/content-promotion--desktop.webp");
   min-height: 462px;
   justify-self: end;
+  background: $color-torch-intensive-red;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 462px;
+    width: 280px;
+    background: center / contain no-repeat url("../img/content-promotion--desktop.webp"), linear-gradient(#528ae4, #b7d5f4);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
   @include retina {
-    background-image: url("../img/content-promotion--desktop@2x.webp");
+    &::after {
+      background: center / contain no-repeat url("../img/content-promotion--desktop@2x.webp"), linear-gradient(#528ae4, #b7d5f4);
+    }
   }
 
   &::before {
-    display: none;
+    background: linear-gradient(to right, #528ae4, #3762d8);
+    width: 280px;
+    top: 0;
+    right: 0;
+    left: auto;
+
+    @include vp-1199 {
+      width: 399px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
   }
 
   .promotions-item__title {
@@ -115,6 +140,8 @@
     font-size: 4.38rem;
     line-height: 1.56em;
     margin-top: -24px;
+    max-width: 200px;
+    word-break: break-word;
   }
 
   .promotions-item__description {
@@ -136,6 +163,7 @@
   @include vp-1199 {
     grid-column: 1/3;
     justify-self: auto;
+    padding: 34px 64% 45px 45px;
   }
 
   @include vp-767 {
@@ -158,20 +186,27 @@
 }
 
 .promotions-list .promotions-item--main {
-  @include vp-1199 {
-    background-image: url("../img/content-promotion--tablet.webp");
+  &::after {
+    @include vp-1199 {
+      height: 462px;
+      width: 399px;
+      background: center / contain no-repeat url("../img/content-promotion--tablet.webp"), linear-gradient(#528ae4, #b7d5f4);
 
-    @include retina {
-      background-image: url("../img/content-promotion--tablet@2x.webp");
+      @include retina {
+        background: center / contain no-repeat url("../img/content-promotion--tablet@2x.webp"), linear-gradient(#528ae4, #b7d5f4);
+      }
     }
-  }
 
-  @include vp-767 {
-    background-position: bottom;
-    background-image: url("../img/content-promotion--mobile.webp");
+    @include vp-767 {
+      height: 299px;
+      width: 290px;
+      top: auto;
+      bottom: 0;
+      background: center / contain no-repeat url("../img/content-promotion--mobile.webp"), linear-gradient(#528ae4, #b7d5f4);
 
-    @include retina {
-      background-image: url("../img/content-promotion--mobile@2x.webp");
+      @include retina {
+        background: center / contain no-repeat url("../img/content-promotion--mobile@2x.webp"), linear-gradient(#528ae4, #b7d5f4);
+      }
     }
   }
 }

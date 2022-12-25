@@ -90,6 +90,7 @@
   font-size: 1rem;
   line-height: 1.5em;
   color: $color-sapphire;
+  max-width: 380px;
 
   &:last-of-type {
     margin: 7px 0 0;
@@ -97,6 +98,7 @@
 
   @include vp-1199 {
     width: 80%;
+    max-width: none;
     margin: 33px auto 45px;
 
     &:last-of-type {
@@ -141,6 +143,7 @@
     background-size: contain;
     background-position: center;
     background-image: url("../img/preview-video-gym--desktop.webp");
+    background-color: $color-ghost-white;
     position: absolute;
     top: 0;
     left: 0;

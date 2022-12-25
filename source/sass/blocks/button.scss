@@ -9,6 +9,7 @@
   padding: 20px 54px;
   width: max-content;
   letter-spacing: 0.05em;
+  user-select: none;
 
   @include vp-1199 {
     padding: 19px 32px;
@@ -40,7 +41,7 @@
 }
 
 .button--banner {
-  padding: 25px 111px;
+  padding: 25px 110px;
   transition: 0.3s all;
 
   &:hover {

@@ -1,12 +1,14 @@
 .promotions-list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
+  width: 1160px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 
   @include vp-1199 {
+    width: 678px;
     gap: 30px;
   }
 
