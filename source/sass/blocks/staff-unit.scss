@@ -177,6 +177,114 @@
   }
 }
 
+
+.staff-unit--bruskova {
+  &::before {
+    background-image: url("../img/content-coach-5--desktop.webp");
+  }
+
+  @include retina {
+    &::before {
+      background-image: url("../img/content-coach-5--desktop@2x.webp");
+    }
+  }
+}
+
+.staff-list .staff-unit--bruskova {
+  @include vp-767 {
+    &::before {
+      background-image: url("../img/content-coach-5--mobile.webp");
+    }
+
+    @include retina {
+      &::before {
+        background-image: url("../img/content-coach-5--mobile@2x.webp");
+      }
+    }
+  }
+}
+
+
+.staff-unit--zonov {
+  &::before {
+    background-image: url("../img/content-coach-6--desktop.webp");
+  }
+
+  @include retina {
+    &::before {
+      background-image: url("../img/content-coach-6--desktop@2x.webp");
+    }
+  }
+}
+
+.staff-list .staff-unit--zonov {
+  @include vp-767 {
+    &::before {
+      background-image: url("../img/content-coach-6--mobile.webp");
+    }
+
+    @include retina {
+      &::before {
+        background-image: url("../img/content-coach-6--mobile@2x.webp");
+      }
+    }
+  }
+}
+
+
+.staff-unit--stolyarov {
+  &::before {
+    background-image: url("../img/content-coach-7--desktop.webp");
+  }
+
+  @include retina {
+    &::before {
+      background-image: url("../img/content-coach-7--desktop@2x.webp");
+    }
+  }
+}
+
+.staff-list .staff-unit--stolyarov {
+  @include vp-767 {
+    &::before {
+      background-image: url("../img/content-coach-7--mobile.webp");
+    }
+
+    @include retina {
+      &::before {
+        background-image: url("../img/content-coach-7--mobile@2x.webp");
+      }
+    }
+  }
+}
+
+
+.staff-unit--senov {
+  &::before {
+    background-image: url("../img/content-coach-8--desktop.webp");
+  }
+
+  @include retina {
+    &::before {
+      background-image: url("../img/content-coach-8--desktop@2x.webp");
+    }
+  }
+}
+
+.staff-list .staff-unit--senov {
+  @include vp-767 {
+    &::before {
+      background-image: url("../img/content-coach-8--mobile.webp");
+    }
+
+    @include retina {
+      &::before {
+        background-image: url("../img/content-coach-8--mobile@2x.webp");
+      }
+    }
+  }
+}
+
 .staff-unit__name {
   color: $color-default-white;
   text-align: center;
