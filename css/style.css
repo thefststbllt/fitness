@@ -2482,6 +2482,22 @@ button,
   background-image: url("../img/content-coach-4--desktop.webp");
 }
 
+.staff-unit--bruskova::before {
+  background-image: url("../img/content-coach-5--desktop.webp");
+}
+
+.staff-unit--zonov::before {
+  background-image: url("../img/content-coach-6--desktop.webp");
+}
+
+.staff-unit--stolyarov::before {
+  background-image: url("../img/content-coach-7--desktop.webp");
+}
+
+.staff-unit--senov::before {
+  background-image: url("../img/content-coach-8--desktop.webp");
+}
+
 .staff-unit__name {
   color: #ffffff;
   text-align: center;
@@ -4234,6 +4250,22 @@ button,
     background-image: url("../img/content-coach-4--mobile.webp");
   }
 
+  .staff-list .staff-unit--bruskova::before {
+    background-image: url("../img/content-coach-5--mobile.webp");
+  }
+
+  .staff-list .staff-unit--zonov::before {
+    background-image: url("../img/content-coach-6--mobile.webp");
+  }
+
+  .staff-list .staff-unit--stolyarov::before {
+    background-image: url("../img/content-coach-7--mobile.webp");
+  }
+
+  .staff-list .staff-unit--senov::before {
+    background-image: url("../img/content-coach-8--mobile.webp");
+  }
+
   .staff-unit__competence {
     margin-left: 0;
   }
@@ -4653,6 +4685,22 @@ button,
     background-image: url("../img/content-coach-4--mobile@2x.webp");
   }
 
+  .staff-list .staff-unit--bruskova::before {
+    background-image: url("../img/content-coach-5--mobile@2x.webp");
+  }
+
+  .staff-list .staff-unit--zonov::before {
+    background-image: url("../img/content-coach-6--mobile@2x.webp");
+  }
+
+  .staff-list .staff-unit--stolyarov::before {
+    background-image: url("../img/content-coach-7--mobile@2x.webp");
+  }
+
+  .staff-list .staff-unit--senov::before {
+    background-image: url("../img/content-coach-8--mobile@2x.webp");
+  }
+
   .promotions-list .promotions-item--main::after {
     background: center/contain no-repeat url("../img/content-promotion--mobile@2x.webp"), -webkit-gradient(linear, left top, left bottom, from(#528ae4), to(#b7d5f4));
     background: center/contain no-repeat url("../img/content-promotion--mobile@2x.webp"), -o-linear-gradient(#528ae4, #b7d5f4);
@@ -4697,6 +4745,22 @@ button,
 
   .staff-unit--ketova::before {
     background-image: url("../img/content-coach-4--desktop@2x.webp");
+  }
+
+  .staff-unit--bruskova::before {
+    background-image: url("../img/content-coach-5--desktop@2x.webp");
+  }
+
+  .staff-unit--zonov::before {
+    background-image: url("../img/content-coach-6--desktop@2x.webp");
+  }
+
+  .staff-unit--stolyarov::before {
+    background-image: url("../img/content-coach-7--desktop@2x.webp");
+  }
+
+  .staff-unit--senov::before {
+    background-image: url("../img/content-coach-8--desktop@2x.webp");
   }
 
   .promotions-item--main::after {
