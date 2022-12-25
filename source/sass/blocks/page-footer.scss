@@ -45,6 +45,10 @@
   @include vp-767 {
     display: none;
   }
+
+  img {
+    user-select: none;
+  }
 }
 
 .page-footer__logo-mobile {

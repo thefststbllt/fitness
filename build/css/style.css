@@ -1680,6 +1680,13 @@ button,
   height: 44px;
 }
 
+.main-header__logo img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .main-header__phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2957,6 +2964,10 @@ button,
   background-color: #58626e;
   background-image: url("../img/image-undefined-user.webp");
   pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .user-comment__name {
@@ -3031,7 +3042,7 @@ button,
 
 .form input[type=text],
 .form input[type=tel] {
-  color: #ffffff;
+  color: #ff1553;
   font-size: 0.88rem;
   line-height: 1.14em;
   padding: 6px 0;
@@ -3215,6 +3226,13 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.page-footer__logo img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .navigation-list {

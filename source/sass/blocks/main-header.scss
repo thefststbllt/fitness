@@ -39,6 +39,10 @@
     width: 67px;
     height: 24px;
   }
+
+  img {
+    user-select: none;
+  }
 }
 
 .main-header__phone {
