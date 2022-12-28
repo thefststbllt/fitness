@@ -21,7 +21,6 @@ export const initStaffSwiper = () => {
     },
 
     loop: true,
-
     slidesPerView: 'auto',
 
     grabCursor: true,

@@ -4,11 +4,11 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 242px;
+  max-width: 169px;
   row-gap: 10px;
 
   @include vp-1199 {
-    max-width: 100px;
+    max-width: 97px;
   }
 
   @include vp-767 {
@@ -17,7 +17,7 @@
 }
 
 .socials__item {
-  &:not(:nth-child(7n + 1)) {
+  &:not(:nth-child(5n + 1)) {
     margin-left: 11px;
   }
 

@@ -5,6 +5,7 @@ import {initVideoPreview} from './modules/preview-clicker/preview-clicker.js';
 import {initFeedbackSwiper} from './modules/feedback-swiper/feedback-swiper.js';
 import {initScrollTo} from './modules/scroll-to/scroll-to.js';
 import {getPhoneMask} from './modules/phone-mask/phone-mask.js';
+import {removeSpareTabs} from './modules/remove-spare-tabs/remove-spare-tabs.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
@@ -14,4 +15,5 @@ window.addEventListener('DOMContentLoaded', () => {
   initStaffSwiper();
   initFeedbackSwiper();
   getPhoneMask();
+  removeSpareTabs();
 });

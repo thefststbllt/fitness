@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 1160px;
+  width: 84.92vw;
   height: 21.52vw;
 
   @include vp-1199 {
@@ -31,19 +31,27 @@
   gap: 40px;
 
   .staff-unit {
-    height: 294px;
+    height: 21.52vw;
   }
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-left: -56px;
+    height: auto;
 
     .staff-unit {
       justify-self: center;
+      height: 294px;
     }
   }
 
   @include vp-767 {
     height: auto;
+    margin-left: 0;
+
+    .staff-unit {
+      height: 91.88vw;
+    }
   }
 }
