@@ -25,10 +25,18 @@
   font-size: 0.88rem;
   line-height: 1.5em;
   color: $color-sapphire;
+  width: max-content;
+  max-width: 180px;
+  word-break: break-word;
 
   @include vp-1199 {
     font-size: 1.13rem;
     line-height: 1.52em;
+    max-width: 220px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
   }
 }
 

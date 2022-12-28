@@ -22,6 +22,7 @@ export const initFeedbackSwiper = () => {
     observer: true,
     observeParents: true,
     loop: false,
+    activeIndex: 1,
 
     navigation: {
       nextEl: '.swiper-button-next',

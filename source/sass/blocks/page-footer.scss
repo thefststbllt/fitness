@@ -63,5 +63,6 @@
 .page-footer__socials {
   @include vp-1199 {
     margin-right: -6px;
+    max-width: 100px;
   }
 }

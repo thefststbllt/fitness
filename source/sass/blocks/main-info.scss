@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -35,7 +35,7 @@
 
   @include vp-767 {
     font-size: 1.75rem;
-    margin: 0 4px 14px 0;
+    margin: 0 4px 14px auto;
   }
 }
 
@@ -60,9 +60,10 @@
   }
 
   @include vp-767 {
-    margin: 0 0 23px;
+    margin: 0 0 23px auto;
     max-width: none;
     word-break: keep-all;
+    width: min-content;
   }
 }
 

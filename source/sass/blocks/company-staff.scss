@@ -3,14 +3,17 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
+  max-width: none;
+  width: 84.92vw;
   position: relative;
 
   @include vp-1199 {
-    padding-bottom: 100px;
+    padding: 0 0 100px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
-    padding-bottom: 70px;
+    padding: 0 0 70px;
   }
 }
 
@@ -18,7 +21,6 @@
   font-size: 3.38rem;
   line-height: 1.2em;
   margin-bottom: 48px;
-  margin-left: 7.69vw;
   max-width: 80%;
 
   @include vp-1199 {
@@ -45,30 +47,32 @@
 
   @include vp-767 {
     transform: scale(0.45);
-    top: calc(50% + 6px);
+    top: calc(50% + 5.7vw);
+    width: 3.1vw;
+    height: 5.9vw;
   }
 }
 
 .company-staff__button--prev {
-  left: 3vw;
+  left: -4.5vw;
 
   @include vp-1199 {
-    left: 5vw;
+    left: -2.5vw;
   }
 
   @include vp-767 {
-    left: 7px;
+    left: -3.3vw;
   }
 }
 
 .company-staff__button--next {
-  right: 3vw;
+  right: -4.5vw;
 
   @include vp-1199 {
-    right: 5vw;
+    right: -2.5vw;
   }
 
   @include vp-767 {
-    right: 7px;
+    right: -3.3vw;
   }
 }

@@ -3,22 +3,25 @@
   padding: 0;
   list-style: none;
   width: 1160px;
-  height: 294px;
+  height: 21.52vw;
 
   @include vp-1199 {
     width: 678px;
     padding: 0;
+    height: 294px;
   }
 
   @include vp-767 {
-    width: 226px;
+    width: 70.6vw;
     grid-template-columns: 1fr;
-    height: 274px;
+    height: 85.6vw;
   }
 }
 
 .staff-list__item {
-  max-width: 260px;
+  @include vp-767 {
+    max-width: 70.6vw;
+  }
 }
 
 .staff-list--no-js {
@@ -38,5 +41,9 @@
     .staff-unit {
       justify-self: center;
     }
+  }
+
+  @include vp-767 {
+    height: auto;
   }
 }

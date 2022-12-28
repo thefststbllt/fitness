@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   width: 341px;
-  border-bottom: 2px solid $color-grey;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   user-select: none;
 
   @include vp-1199 {
@@ -18,6 +18,7 @@
 }
 
 .buttons-list__button {
+  color: rgba(16, 38, 84, 0.5);
   font-size: 1.25rem;
   line-height: 1.5em;
   padding: 18px 0 10px;
@@ -39,6 +40,8 @@
 
 .buttons-list__button:hover,
 .buttons-list__button--current {
+  color: $color-sapphire;
+
   &::after {
     content: "";
     display: block;

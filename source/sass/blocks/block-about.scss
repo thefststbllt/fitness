@@ -8,9 +8,10 @@
 
 .block-about__container {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 235px;
+  padding: 120px 0 235px;
+  margin: 0 auto;
   column-gap: 85px;
+  width: 1160px;
 
   &::after {
     content: "";
@@ -28,14 +29,14 @@
     flex-direction: column;
     align-content: center;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 183px;
+    padding: 100px 0 183px;
+    width: 678px;
   }
 
   @include vp-767 {
-    padding-top: 63px;
-    padding-bottom: 55px;
+    padding: 63px 0 55px;
     text-align: start;
+    width: 90.6vw;
   }
 
   @include retina {
@@ -117,7 +118,7 @@
   height: 228px;
   position: absolute;
   left: calc(50% - 143px);
-  bottom: 120px;
+  top: 408px;
   background-color: rgba(20, 54, 122, 0.5);
 
   @include vp-1199 {
@@ -125,6 +126,7 @@
     height: 167px;
     left: calc(50% - 133px);
     bottom: 101px;
+    top: auto;
   }
 
   @include vp-767 {
@@ -319,7 +321,7 @@
   @include vp-767 {
     &::after {
       min-width: auto;
-      height: 313px;
+      height: 97.8vw;
       margin: -15px;
       background: center / contain no-repeat url("../img/content-gym--mobile.webp");
     }
@@ -327,7 +329,7 @@
     @include retina {
       &::after {
         min-width: auto;
-        height: 313px;
+        height: 97.8vw;
         margin: -15px;
         background: center / contain no-repeat url("../img/content-gym--mobile@2x.webp");
       }
