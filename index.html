@@ -17,7 +17,9 @@
             <a class="main-header__logo logo">
               <img src="img/svg/logo-supergym--desktop.svg" width="119" height="23" alt="Логотип SuperGym">
             </a>
-            <a class="main-header__phone phone" href="tel:8-800-555-55-55" tabindex="1">8-800-555-55-55</a>
+            <div class="main-header__phone-wrapper">
+              <a class="main-header__phone phone" href="tel:8-800-555-55-55" tabindex="1">8-800-555-55-55</a>
+            </div>
           </div>
           <div class="main-header__main-wrapper">
             <div class="main-header__info-wrapper main-info">
@@ -203,8 +205,10 @@
           <div class="company-staff__container container">
             <h2 class="company-staff__title title">Тренеры</h2>
             <div class="swiper-staff">
+              <button class="company-staff__button company-staff__button--prev visually-hidden" type="button"
+                      aria-label="previous-slide"></button>
               <ul class="company-staff__list staff-list staff-list--no-js swiper-wrapper">
-                <li class="staff-list__item swiper-slide staff-unit staff-unit--pavlova">
+                <li tabindex="0" class="staff-list__item swiper-slide staff-unit staff-unit--pavlova">
                   <h3 class="staff-unit__name" data-coach-name="Анна Павлова">Анна Павлова</h3>
                   <span class="staff-unit__competence">General instructor</span>
                   <ul class="staff-unit__list">
@@ -213,7 +217,7 @@
                     <li>Опыт — 10 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item swiper-slide staff-unit staff-unit--lavrov">
+                <li tabindex="0" class="staff-list__item swiper-slide staff-unit staff-unit--lavrov">
                   <h3 class="staff-unit__name" data-coach-name="Алексей Лавров">Алексей Лавров</h3>
                   <span class="staff-unit__competence">Armwrestling</span>
                   <ul class="staff-unit__list">
@@ -222,7 +226,7 @@
                     <li>Опыт — 3 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item swiper-slide staff-unit staff-unit--pashkov">
+                <li tabindex="0" class="staff-list__item swiper-slide staff-unit staff-unit--pashkov">
                   <h3 class="staff-unit__name" data-coach-name="Александр Пашков">Александр Пашков</h3>
                   <span class="staff-unit__competence">CrossFit</span>
                   <ul class="staff-unit__list">
@@ -231,7 +235,7 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item swiper-slide staff-unit staff-unit--ketova">
+                <li tabindex="0" class="staff-list__item swiper-slide staff-unit staff-unit--ketova">
                   <h3 class="staff-unit__name" data-coach-name="Мария Кетова">Мария Кетова</h3>
                   <span class="staff-unit__competence">Pilates</span>
                   <ul class="staff-unit__list">
@@ -240,7 +244,7 @@
                     <li>Опыт — 5 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item swiper-slide staff-unit staff-unit--bruskova">
+                <li tabindex="0" class="staff-list__item swiper-slide staff-unit staff-unit--bruskova">
                   <h3 class="staff-unit__name" data-coach-name="Раиса Брускова">Раиса Брускова</h3>
                   <span class="staff-unit__competence">Boxing instructor</span>
                   <ul class="staff-unit__list">
@@ -249,7 +253,7 @@
                     <li>Опыт — 11 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item swiper-slide staff-unit staff-unit--zonov">
+                <li tabindex="0" class="staff-list__item swiper-slide staff-unit staff-unit--zonov">
                   <h3 class="staff-unit__name" data-coach-name="Дмитрий Зонов">Дмитрий Зонов</h3>
                   <span class="staff-unit__competence">Weightlifting & Powerlifting</span>
                   <ul class="staff-unit__list">
@@ -258,7 +262,7 @@
                     <li>Опыт — 15 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item swiper-slide staff-unit staff-unit--stolyarov">
+                <li tabindex="0" class="staff-list__item swiper-slide staff-unit staff-unit--stolyarov">
                   <h3 class="staff-unit__name" data-coach-name="Фёдор Столяров">Фёдор Столяров</h3>
                   <span class="staff-unit__competence">Powerlifting & Armlifting</span>
                   <ul class="staff-unit__list">
@@ -267,7 +271,7 @@
                     <li>Опыт — 20 лет</li>
                   </ul>
                 </li>
-                <li class="staff-list__item swiper-slide staff-unit staff-unit--senov">
+                <li tabindex="0" class="staff-list__item swiper-slide staff-unit staff-unit--senov">
                   <h3 class="staff-unit__name" data-coach-name="Евгений Сенов">Евгений Сенов</h3>
                   <span class="staff-unit__competence">Bodybuilding</span>
                   <ul class="staff-unit__list">
@@ -277,8 +281,6 @@
                   </ul>
                 </li>
               </ul>
-              <button class="company-staff__button company-staff__button--prev visually-hidden" type="button"
-                      aria-label="previous-slide"></button>
               <button class="company-staff__button company-staff__button--next visually-hidden" type="button"
                       aria-label="next-slide"></button>
             </div>
@@ -296,7 +298,8 @@
               <li class="features-list__item features-item">
                 <h3 class="features-item__title">Собственная парковка</h3>
                 <span class="features-item__main-sign">70<span class="features-item__unit">машин</span></span>
-                <p class="features-item__description">Вы всегда найдете место для&nbsp;своей&nbsp;машины на&nbsp;нашей парковке</p>
+                <p class="features-item__description">Вы всегда найдете место для&nbsp;своей&nbsp;машины на&nbsp;нашей
+                  парковке</p>
               </li>
               <li class="features-list__item features-item features-item--extra">
                 <h3 class="features-item__title">Тренажеров</h3>
