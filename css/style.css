@@ -2642,19 +2642,6 @@ button,
 
 .company-features {
   background-color: #f8f9fc;
-  position: relative;
-}
-
-.company-features::before {
-  content: "";
-  display: block;
-  background-color: #ffffff;
-  height: 100%;
-  width: 33px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .company-features__container {
@@ -3810,10 +3797,6 @@ button,
 
   .staff-unit__competence {
     margin-left: -8px;
-  }
-
-  .company-features::before {
-    display: none;
   }
 
   .company-features__container {
